@@ -13,7 +13,7 @@ values = [
 length = len(values) * len(values[0])
 P, K, Y = [], [], []
 
-pattern = r'[А-я,.:; ]+'
+pattern = r'[А-я,.:;?! ]+'
 phrase = input('Введите фразу с клавиатуры: ')
 while re.fullmatch(pattern, phrase) is None:
     phrase = input('Введенная строка некоректна, повторите ввод: ')
